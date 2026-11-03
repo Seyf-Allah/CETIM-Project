@@ -24,7 +24,14 @@ COLORS = {
 }
 
 # --------------------------------------------------------------------------- ressources
+from pathlib import Path
+from huggingface_hub import hf_hub_download
 
+ROOT = Path(__file__).resolve().parent
+if not (ROOT / "modele.pt").exists():
+    with st.spinner("Téléchargement du modèle…"):
+        hf_hub_download(repo_id=st.secrets["HF_REPO"], filename="modele.pt",
+                        token=st.secrets["HF_TOKEN"], local_dir=ROOT)
 
 @st.cache_resource(show_spinner="Chargement du modèle SSLAM V6 (360 Mo)…")
 def get_streamer(device: str):
