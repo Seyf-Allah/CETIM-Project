@@ -1,0 +1,10 @@
+# Version HÉBERGÉE (Streamlit Community Cloud) : à mettre à la racine du dépôt GitHub, à la place de requirements.txt
+--extra-index-url https://download.pytorch.org/whl/cpu
+numpy>=1.26,<3
+torch==2.10.0
+torchaudio==2.10.0
+soundfile==0.13.1
+streamlit==1.66.1
+pandas
+matplotlib
+huggingface_hub

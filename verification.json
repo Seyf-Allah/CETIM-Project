@@ -1,0 +1,8 @@
+{
+  "all_state_tensors_exactly_equal_to_official_V7": true,
+  "synthetic_3s_predictions_identical": true,
+  "silence_10s_outputs": 19,
+  "dtype_conversion_of_backbone": false,
+  "training_performed": false,
+  "merged_model_sha256": "8c4ef17951c4658ff0274b3cee1df93e65e4bd53b67063a9d9ecc7ddacbee8fa"
+}
